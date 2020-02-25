@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es" class="fondo2">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 2</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>EJERCICIO 2</h1>
+	</header>
+	<nav>
+		<br>
+		<ul>
+			<li><a href="index.html">Anterior</a></li>
+			<li><a href="ejercicio3.html">Siguiente</a></li>
+		</ul>
+		<br>
+	</nav>
+	<br><br><br><br>
+	<section>
+		<script src="js/validacion.js"></script>
+		Un vendedor recibe un sueldo base mas un 12.5% extra por comision de sus ventas, 
+		el vendedor desea saber cuanto dinero obtendra por concepto de comisiones
+		por las 5 ventas que realiza en el mes y el total que recibira en el mes
+		tomando en cuenta su sueldo base y comisiones
+		<br><br>
+		<form method="get" name="formulario2">
+			<br>
+			<table border="2">
+				<th>Sueldo</th>
+				<th>Monto</th>
+				<tr>
+					<td>Introduzca su sueldo mensual: </td>
+					<td><input type="text" name="sueldo" onkeypress="return validar_numeros(event)"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="boton" value="Calcular Sueldo Total" onclick="Comision(event)"></td>
+				</tr>
+				<tr>
+					<td>Su Comision extra por venta es: </td>
+					<td><input type="text" name="comision" id="comision" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Su Comisión extra total es: </td>
+					<td><input type="text" name="comision_total" id="comision_totali" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Su Sueldo total es de:</td>
+					<td><input type="text" name="total" id="totali" readonly="readonly" class="input_text"></td>
+				</tr>
+			</table>
+			<br><br>
+			<p>
+				<input type="text" name="alerta" readonly="readonly" class="alerta">
+			</p>
+		</form>
+	</section>
+</body>
+</html>

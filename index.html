@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>EJERCICIO 1</h1>
+	</header>
+	<nav>
+		<br>
+		<ul>
+			<li><a href="ejercicio2.html">Siguiente</a></li>
+		</ul>
+		<br>
+	</nav>
+	<br><br><br><br>
+	<section>
+		<script src="js/validacion.js"></script>
+		Suponga que un individuo desea invertir su capital en un banco y desea saber
+		cuanto dinero ganara despues de un mes si el banco paga a razon a 7.7%
+		anual
+		<br><br>
+		<form method="get" name="formulario1">
+			<br>
+			<table border="2">
+				<th>Capital</th>
+				<th>Monto</th>
+				<tr>
+					<td>Introduce la cantidad que desea invertir: </td>
+					<td><input type="text" name="cantidad" onkeypress="return validar_numeros(event)"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="boton" value="Calcula los intereses" onclick="Inversion(event)"></td>
+				</tr>
+				<tr>
+					<td>Su ganancia mensual sera de: </td>
+					<td><input type="text" name="ganancia" id="gananciai" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Su saldo mensual final es de:</td>
+					<td><input type="text" name="total" id="sueldoi" readonly="readonly" class="input_text"></td>
+				</tr>
+			</table>
+			<br><br><br>
+			<p>
+				<input type="text" name="alerta" readonly="readonly" class="alerta">
+			</p>
+		</form>
+	</section>
+</body>
+</html>

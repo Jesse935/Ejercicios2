@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" class="fondo3">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 3</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>EJERCICIO 3</h1>
+	</header>
+	<nav>
+		<br>
+		<ul>
+			<li><a href="ejercicio2.html">Anterior</a></li>
+			<li><a href="ejercicio4.html">Siguiente</a></li>
+		</ul>
+		<br>
+	</nav>
+	<br><br><br><br>
+	<section>
+		<script src="js/validacion.js"></script>
+		Una tienda ofrece un descuento del 15% sobre el total de la compra y un cliente
+		desea saber cuanto debera pagar finalmente por su compra, debe de ingresar
+		que compro
+		<br><br>
+		<form method="get" name="formulari3">
+			<br>
+			<table border="2">
+				<th></th>
+				<th>Escoja</th>
+				<th>Objeto</th>
+				<th>Precio</th>
+				<tr>
+					<td>Peliculas</td>
+					<td>
+						<select id="peliculas">
+							<option></option>
+							<option value="netflix">Netflix</option>
+							<option value="blim">Blim</option>
+							<option value="amazon">Amazon Prime</option>
+							<option value="claro">Claro Video</option>						
+						</select>
+					</td>
+					<td><input type="text" name="peliculas_objeto" readonly="readonly"></td>
+					<td><input type="text" name="peliculas_costo" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Consola</td>
+					<td>
+						<select id="Consola">
+							<option></option>
+							<option id="xbox">Xbox Series</option>
+							<option id="play">PlayStation 5</option>
+							<option id="nintendo">Nintendo Switch</option>
+							<option id="google">Google Stadia</option>
+						</select>
+					</td>
+					<td><input type="text" name="consola_objeto" readonly="readonly"></td>
+					<td><input type="text" name="consola_costo" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Juegos</td>
+					<td>
+						<select id="juegos">
+							<option></option>
+							<option id="ajedrez">ajedrez</option>
+							<option id="uno">Uno</option>
+							<option id="monopoly">Monopoly</option>
+							<option id="clue">Clue</option>
+						</select>
+					</td>
+					<td><input type="text" name="juegos_objeto" readonly="readonly"></td>
+					<td><input type="text" name="juegos_costo" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Bebidas</td>
+					<td>
+						<select id="bebidas">
+							<option></option>
+							<option id="gatorade">Gatorade</option>
+							<option id="powerade">Powerade</option>
+							<option id="electrolit">Electrolit</option>
+							<option id="suerox">Suerox</option>
+						</select>
+					</td>
+					<td><input type="text" name="bebidas_objeto" readonly="readonly"></td>
+					<td><input type="text" name="bebidas_costo" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Accesorios</td>
+					<td>
+						<select id="accesorios">
+							<option></option>
+							<option id="reloj">Reloj</option>
+							<option id="audifonos">Audifonos</option>
+							<option id="anillo">Anillo</option>
+							<option id="collar">Collar de Vlad</option>
+						</select>
+					</td>
+					<td><input type="text" name="accesorios_objeto" readonly="readonly"></td>
+					<td><input type="text" name="accesorios_costo" readonly="readonly"></td>
+				</tr>
+			</table>
+			<br>
+			<input type="button" name="boton" value="Calcular" onclick="cambiar()">
+			<br>
+			<table border="2">
+				<tr>
+					<td>Precio</td>
+					<td><input type="text" name="precio" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Descuento</td>
+					<td><input type="text" name="descuento" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td>Total</td>
+					<td><input type="text" name="total" readonly="readonly"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+</body>
+</html>

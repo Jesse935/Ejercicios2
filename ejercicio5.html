@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" class="fondo5">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 5</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>EJERCICIO 5</h1>
+	</header>
+	<nav>
+		<br>
+		<ul>
+			<li><a href="ejercicio4.html">Anterior</a></li>
+			<li><a href="ejercicio6.html">Siguiente</a></li>
+		</ul>
+		<br>
+	</nav>
+	<br><br><br><br>
+	<section>
+		<script src="js/validacion.js"></script>
+		Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres 
+		hay en grupo de estudiantes
+
+		<form method="get" name="formulario5">
+			<br>
+			<table border="2">
+				<th>Cantidad de Hombres</th>
+				<th>Cantidad de Mujeres</th>
+				<th>Total</th>
+				<tr>
+					<td><input type="text" name="h" onkeypress="return validarn4(event)"></td>
+					<td><input type="text" name="m" onkeypress="return validarn4(event)"></td>
+					<td><input type="text" name="t" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><input type="button" name="c" value="Calcular" onclick="Alumnado()"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="h0" readonly="readonly"></td>
+					<td><input type="text" name="m0" readonly="readonly"></td>
+					<td><input type="text" name="t0" readonly="readonly"></td>
+				</tr>
+			</table>
+			<p>
+				<input type="text" name="alerta" readonly="readonly" class="alerta">
+			</p>
+		</form>
+	</section>
+</body>
+</html>

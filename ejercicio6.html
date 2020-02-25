@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" class="fondo6">
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 6</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<h1>EJERCICIO 6</h1>
+	</header>
+	<nav>
+		<br>
+		<ul>
+			<li><a href="ejercicio5.html">Anterior</a></li>
+		</ul>
+		<br>
+	</nav>
+	<br><br><br><br>
+	<section>
+		<script src="js/validacion.js"></script>
+		Realizar un algoritmo que calcule la edad de una persona
+		<br>
+		(Si el mes esta mal escrito no se tomara en cuenta)
+
+		<form method="get" name="formulario6">
+			<br>
+			<table border="2">
+				<th>Año de nacimiento</th>
+				<th>Año actual</th>
+				<tr>
+					<td><input type="text" name="año1" onkeypress="return validarn4(event)"></td>
+					<td><input type="text" name="año2" value="2020" onkeypress="return validarn4(event)"></td>
+				</tr>
+				<tr>
+					<td>Mes de nacimiento</td>
+					<td>Mes actual</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="mes1"></td>
+					<td><input type="text" name="mes2" value="febrero"></td>
+				</tr>
+				<tr>
+					<td>Dia de nacimiento</td>
+					<td>Dia actual</td>
+				</tr>
+				<tr>
+					<td><input type="text" name="dia1" onkeypress="return validarn4(event)"></td>
+					<td><input type="text" name="dia2" onkeypress="return validarn4(event)"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" name="calcular" value="Calcular Edad" onclick="Edad()"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="text" name="año3" class="alerta" readonly="readonly"></td>
+				</tr>
+			</table>
+			<br><br>
+			<p>
+				<input type="text" name="alerta" readonly="readonly" class="alerta">
+			</p>
+		</form>
+	</section>
+</body>
+</html>
